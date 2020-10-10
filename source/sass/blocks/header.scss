@@ -1,0 +1,54 @@
+.header {
+  font-size: 14px;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1240px;
+  margin: 0 auto;
+  padding: 5px 10px;
+}
+
+.header__contacts-description {
+  font-size: 12px;
+  margin: 0;
+  color: #727272;
+}
+
+.header__adress {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: $m-blue;
+}
+
+.header__callback-btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  background-color: $m-red;
+  color: $font-l;
+  text-transform: uppercase;
+  padding: 15px 25px;
+  font-weight: 700;
+  box-shadow: 0px 5px 10px 0 $m-red;
+  transition: background-color ease .3s,
+    box-shadow ease .3s;
+
+  &:hover,
+  &:focus {
+    background-color: darken($m-red, 7);
+    box-shadow: 0px 2px 7px 0 darken($m-red, 7);
+  }
+
+  &:active {
+    border: none;
+    border-radius: 0;
+    background-color: darken($m-red, 12);
+    box-shadow: 0px 2px 5px 0 darken($m-red, 12);
+  }
+}
