@@ -1,0 +1,122 @@
+.services {
+  background-color: #f4f4f4;
+  background-image: url(../../img/map-bg.png);
+  background-position: center top;
+  background-size: cover;
+}
+
+.services__wrapper {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 100px 10px;
+}
+
+.services__title {
+  @include main-title;
+}
+
+.services__list {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+  height: 250px;
+  margin-bottom: 20px;
+  padding: 30px;
+  background-color: $m-blue;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &--atp {
+    background-image: url(../../img/services-atp.jpg);
+
+    &::before {
+      @include overlay;
+    }
+  }
+
+  &--verification {
+    background-image: url(../../img/services-poverka-vodomerov.jpg);
+
+    &::before {
+      @include overlay;
+    }
+  }
+
+  &--maintenance {
+    background-image: url(../../img/services-to-teplomer.jpg);
+
+    &::before {
+      @include overlay;
+    }
+  }
+
+  &--sale {
+    background-image: url(../../img/services-prodazha-vodomerov.jpg);
+
+    &::before {
+      @include overlay;
+    }
+  }
+
+  &--lab {
+    background-image: url(../../img/services-poverochnaya-laboratoriya.jpg);
+
+    &::before {
+      @include overlay;
+    }
+  }
+
+  &--verification-opu {
+    background-image: url(../../img/services-poverka-opu.jpg);
+
+    &::before {
+      @include overlay;
+    }
+  }
+}
+
+
+.services__item:hover .services__item--atp::before {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.services__link {
+  position: relative;
+  margin-top: auto;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.services__link-more {
+  align-self: flex-start;
+  color: #ffffff;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px solid #ffffff;
+  opacity: .7;
+
+  transition: opacity ease .3s, border-bottom-color ease .3s,
+    color ease .3s;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+    color: $m-red;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: $m-red;
+  }
+}

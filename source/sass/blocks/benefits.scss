@@ -1,0 +1,48 @@
+.benefits__wrapper {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 100px 10px;
+}
+
+.benefits__title {
+  @include main-title;
+}
+
+.benefits__columns {
+  @include list-reset;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.benefits__column {
+  width: 390px;
+}
+
+.benefits__item-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.benefits__list {
+  @include list-reset;
+}
+
+.benefits__item {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 7px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-image: url(../../img/icons/chec-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

@@ -1,0 +1,132 @@
+.promo {
+  color: #ffffff;
+  background-color: #19232d;
+  background-image: url(../../img/promo-bg.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 1240px;
+  margin: 0 auto;
+  padding: 10px 10px;
+}
+
+.promo__tag {
+  margin-top: 100px;
+  align-self: start;
+  padding: 5px 10px;
+  background-color: $m-red;
+}
+
+.promo__title {
+  margin: 0;
+  font-size: 58px;
+  font-weight: 900;
+  line-height: 68px;
+}
+
+.promo__services-list {
+  @include list-reset;
+
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+.promo__services-item {
+  position: relative;
+  padding-top: 90px;
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    background-color: $m-red;
+  }
+
+  &--project::before {
+    background-image: url(../../img/icons/project-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 18px center;
+    background-size: 40px;
+  }
+
+  &--installation::before {
+    background-image: url(../../img/icons/installation-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px;
+  }
+
+  &--dispatching::before {
+    background-image: url(../../img/icons/dispatching-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 48px;
+  }
+
+  &--sale::before {
+    background-image: url(../../img/icons/box-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 46px;
+  }
+
+}
+
+.promo__services-title-link {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color ease .3s;
+
+  &:hover,
+  &:focus {
+    color: $m-red;
+  }
+}
+
+.promo__services-title {
+  margin: 0;
+}
+
+.promo__services-description {
+  margin: 0 0 10px 0;
+}
+
+.promo__services-link-more {
+  color: #ffffff;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px solid #ffffff;
+  opacity: .7;
+
+  transition: opacity ease .3s, border-bottom-color ease .3s,
+    color ease .3s;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+    color: $m-red;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: $m-red;
+  }
+}
