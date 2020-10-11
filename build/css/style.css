@@ -645,29 +645,94 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 1240px;
   margin: 0 auto;
-  padding: 5px 10px; }
+  padding: 10px 10px; }
+
+.header__logo-img {
+  margin-top: 5px;
+  width: 150px;
+  height: 62px; }
 
 .header__contacts-description {
   font-size: 12px;
   margin: 0;
   color: #727272; }
 
+.header__email-wrapper {
+  margin-left: 50px; }
+
+.header__email-link-wrapper {
+  position: relative;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5; }
+  .header__email-link-wrapper::before {
+    position: absolute;
+    content: "";
+    top: -5px;
+    left: -50px;
+    width: 36px;
+    height: 36px;
+    background-image: url(../../img/icons/envelope-icon.svg);
+    background-repeat: no-repeat; }
+
+.header__email-link-wrapper a {
+  text-decoration: none;
+  color: #34495e; }
+
+.header__adress-wrapper {
+  margin-left: 30px; }
+
 .header__adress {
+  position: relative;
   margin: 0;
   font-size: 15px;
   font-weight: 500;
-  line-height: 1.4;
+  line-height: 1.5;
   color: #34495e; }
+  .header__adress::before {
+    position: absolute;
+    content: "";
+    top: -5px;
+    left: -45px;
+    width: 36px;
+    height: 36px;
+    background-image: url(../../img/icons/placeholder-icon.svg);
+    background-repeat: no-repeat; }
+
+.header__phone-wrapper {
+  margin-left: 30px; }
+
+.header__phone-link-wrapper {
+  position: relative;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5; }
+  .header__phone-link-wrapper::before {
+    position: absolute;
+    content: "";
+    top: -5px;
+    left: -45px;
+    width: 36px;
+    height: 36px;
+    background-image: url(../../img/icons/smartphone-icon.svg);
+    background-repeat: no-repeat; }
+
+.header__phone-link-wrapper a {
+  text-decoration: none;
+  color: #dd3939; }
 
 .header__callback-btn {
   cursor: pointer;
+  margin-top: 15px;
   border: none;
   border-radius: 0;
   background-color: #dd3939;
@@ -699,5 +764,10 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+.socials__item {
+  margin-right: 5px; }
+  .socials__item:last-child {
+    margin-right: 0; }
 
 /*# sourceMappingURL=style.css.map */
