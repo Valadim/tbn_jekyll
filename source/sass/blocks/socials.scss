@@ -11,3 +11,33 @@
     margin-right: 0;
   }
 }
+
+.socials__icon {
+  width: 28px;
+  height: 28px;
+}
+
+.socials__icon {
+  fill: $m-blue;
+  transition: fill ease .3s;
+
+  &--whatsapp:hover {
+    fill: #1BD741;
+  }
+
+  &--telegram:hover {
+    fill:#61A8DE;
+  }
+
+  &--instagram:hover {
+    fill: #C536A4;
+  }
+
+  &--vk:hover {
+    fill:#44678D;
+  }
+
+  &--facebook:hover {
+    fill: #3A559F;
+  }
+}

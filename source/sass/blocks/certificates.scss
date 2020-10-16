@@ -1,0 +1,40 @@
+.certificates {
+  background-color: $gray-bg;
+}
+
+.certificates__wrapper {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 100px 10px;
+}
+
+.certificates__title {
+  @include main-title;
+
+}
+
+.certificates__list {
+  @include list-reset;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.certificates__item {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  // box-shadow: 0 0 2px rgb(161, 161, 161);
+  transition: box-shadow ease .3s;
+  width: 24%;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 5px 20px #ccc;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+

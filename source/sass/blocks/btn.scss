@@ -1,0 +1,31 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 20px;
+}
+
+.btn__link {
+  padding: 10px 30px;
+  color: $m-blue;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid $m-blue;
+
+  transition: background-color ease .3s,
+    box-shadow ease .3s;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: $m-blue;
+    box-shadow: 0px 5px 10px 0 rgba($m-blue, .7);
+  }
+
+  &:active {
+    background-color: $m-blue;
+    box-shadow: 0px 2px 5px 0 rgba($m-blue, .5);
+  }
+}
