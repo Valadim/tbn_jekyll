@@ -12,7 +12,44 @@
 }
 
 .main-nav__item {
+  position: relative;
 
+  &:hover .main-nav__dropdown-list {
+    display: block;
+  }
+}
+
+.main-nav__item a:focus+.main-nav__dropdown-list {
+  display: block;
+}
+
+.main-nav__dropdown-list {
+  @include list-reset;
+
+  position: absolute;
+
+  display: none;
+  width: 400px;
+  background-color: $gray-bg;
+  z-index: 9;
+}
+
+.main-nav__dropdown-item {
+  line-height: 1.4;
+}
+
+.main-nav__dropdown-item a {
+  display: block;
+  padding: 10px 25px;
+  color: $m-blue;
+  text-decoration: none;
+  transition: color ease .3s, background-color ease .3s;
+
+  &:hover,
+  &:focus {
+    color: $font-l;
+    background-color: $m-red;
+  }
 }
 
 .main-nav__link {
