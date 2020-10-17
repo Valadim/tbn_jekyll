@@ -12,6 +12,10 @@
   padding: 10px 10px;
 }
 
+.header__menu-btn {
+  display: none;
+}
+
 .header__logo-img {
   margin-top: 5px;
   width: 150px;
@@ -130,4 +134,86 @@
     background-color: darken($m-red, 12);
     box-shadow: 0px 2px 5px 0 darken($m-red, 12);
   }
+}
+
+@media (max-width: $phone-width) {
+  .header__wrapper {
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .header__menu-btn {
+    display: flex;
+    flex-direction: column;
+    font: inherit;
+    font-size: 10px;
+    color: #777777;
+    line-height: 1;
+    background: none;
+    border: none;
+    transition: co9lor ease .3s;
+    outline: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $m-red;
+    }
+  }
+
+  .header__menu-icon {
+    fill: $m-blue;
+    transition: fill ease .3s;
+
+    &:hover,
+    &:focus,
+    &:active {
+      fill: $m-red;
+    }
+  }
+
+  .header__logo-img {
+    width: 100px;
+    margin-top: 0;
+  }
+
+  .header__phone-wrapper {
+    // margin-top: 10px;
+  }
+
+  .header__contacts-description {
+    display: none;
+    font-size: 10px;
+    line-height: 1.2;
+  }
+
+  .header__adress-wrapper,
+  .header__email-wrapper,
+  .header__callback-btn {
+    display: none;
+  }
+
+  .header__phone-link-wrapper {
+    position: relative;
+    margin: 0 0 0 0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.6;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 5px;
+      left: -35px;
+      width: 32px;
+      height: 32px;
+      background-image: url(../../img/icons/smartphone-icon.svg);
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@media (min-width: $phone-width) and (max-width: $desktop-width) {
+
 }

@@ -67,3 +67,17 @@ img {
 * {
   box-sizing: border-box;
 }
+
+.d-hide {
+  display: none;
+}
+
+@media (max-width: $phone-width) {
+  .d-hide {
+    display: block;
+  }
+
+  .m-hide {
+    display: none;
+  }
+}
