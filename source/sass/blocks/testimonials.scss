@@ -13,15 +13,16 @@
   @include list-reset;
 
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .testimonials__item {
-  margin-right: 20px;
+  width: 24%;
   margin-bottom: 20px;
   // box-shadow: 0 0 2px rgb(161, 161, 161);
   transition: box-shadow ease .3s;
-  width: 24%;
+
 
   &:hover,
   &:focus {
@@ -34,3 +35,27 @@
 }
 
 
+@media (max-width: 500px){
+  .testimonials__wrapper {
+    width: 100%;
+    padding: 50px 20px;
+  }
+
+  .testimonials__item {
+    width: 49%;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1024px){
+  .testimonials__wrapper {
+    width: 100%;
+    padding: 70px 20px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1240px){
+  .testimonials__wrapper {
+    width: 100%;
+    padding: 100px 20px;
+  }
+}

@@ -10,6 +10,7 @@
 .main-nav__list {
   @include list-reset;
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
   width: 1240px;
   padding: 0 10px;
@@ -17,10 +18,6 @@
 
 .main-nav__item {
   position: relative;
-
-  // &:hover .main-nav__dropdown-list {
-  //   display: block;
-  // }
 }
 
 .main-nav__dropdown-list {
@@ -83,25 +80,9 @@
       opacity: .8;
     }
   }
-
-  &--services {
-    padding-right: 45px;
-
-    &::before {
-      position: absolute;
-      content: "";
-      top: 12px;
-      right: 15px;
-      width: 20px;
-      height: 20px;
-      background-image: url(../../img/icons/dots-menu-icon.svg);
-      background-size: contain;
-      opacity: .8;
-    }
-  }
 }
 
-@media (max-width: $phone-width) {
+@media (max-width: 768px) {
 
   .main-nav {
     position: absolute;
@@ -165,6 +146,10 @@
     padding: 7px 25px 7px;
     font-size: 12px;
     font-weight: 700;
+
+    &--dropdown::before {
+        top: 5px;
+      }
   }
 
   .main-nav__dropdown-list {
@@ -192,10 +177,11 @@
 
     display: flex;
     margin-top: 15px;
+    margin-left: 12px;
   }
 
   .main-nav__socials-item {
-    margin-right: 12px;
+    margin-right: 15px;
 
     &:last-child {
       margin-right: 0;
@@ -203,8 +189,8 @@
   }
 
   .main-nav__socials-icon {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
   }
 
   .main-nav__socials-icon {
@@ -216,15 +202,20 @@
     }
 
     &--telegram:hover {
-      fill:#61A8DE;
+      fill: #61A8DE;
     }
 
     &--instagram:hover {
       fill: #C536A4;
     }
 
+    &--vk {
+      width: 18px;
+      height: 18px;
+    }
+
     &--vk:hover {
-      fill:#44678D;
+      fill: #44678D;
     }
 
     &--facebook:hover {
@@ -233,14 +224,75 @@
   }
 }
 
-@media (min-width: $phone-width) and (max-width: $desktop-width) {}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main-nav__list {
+    width: 100%;
+    padding: 0;
+  }
 
-@media (min-width: $desktop-width) {
   .main-nav__item:hover .main-nav__dropdown-list {
     display: block;
   }
 
   .main-nav__item a:focus+.main-nav__dropdown-list {
     display: block;
+  }
+
+  .main-nav__dropdown-item a {
+    padding: 10px 25px;
+  }
+
+  .main-nav__link {
+    padding: 5px 20px;
+    font-size: 13px;
+    font-weight: 700;
+
+    &--dropdown {
+      padding-right: 25px;
+
+      &::before {
+        top: 9px;
+        right: 5px;
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1240px) {
+
+  .main-nav__list {
+    width: 100%;
+    padding: 0;
+  }
+
+  .main-nav__item:hover .main-nav__dropdown-list {
+    display: block;
+  }
+
+  .main-nav__item a:focus+.main-nav__dropdown-list {
+    display: block;
+  }
+
+  .main-nav__dropdown-item a {
+    padding: 10px 25px;
+  }
+
+  .main-nav__link {
+    padding: 5px 20px;
+    font-size: 13px;
+    font-weight: 700;
+
+    &--dropdown {
+      padding-right: 25px;
+
+      &::before {
+        top: 9px;
+        right: 5px;
+        width: 16px;
+        height: 16px;
+      }
+    }
   }
 }

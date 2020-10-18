@@ -42,15 +42,8 @@
   }
 }
 
-@media (max-width: $phone-width) {
+@media (max-width: 768px) {
   .socials {
     display: none;
-  }
-}
-
-@media (min-width: $phone-width) and (max-width: $desktop-width) {
-  .socials__icon {
-    width: 24px;
-    height: 24px;
   }
 }

@@ -13,11 +13,12 @@
   @include list-reset;
 
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .works__item {
-  margin-right: 20px;
+  width: 32%;
   margin-bottom: 20px;
   box-shadow: 0 0 2px rgb(161, 161, 161);
   transition: box-shadow ease .3s;
@@ -58,4 +59,69 @@
 
 .works__item-title {
   margin: 5px 0 20px;
+}
+
+@media (max-width: 500px) {
+  .works__wrapper {
+    width: 100%;
+    padding: 50px 20px;
+  }
+
+  .works__item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .works__tag {
+    font-size: 10px;
+  }
+
+  .work__title-link {
+    font-size: 16px;
+  }
+
+  .works__item-title {
+    margin: 5px 0 20px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1024px) {
+  .works__wrapper {
+    width: 100%;
+    padding: 70px 20px;
+  }
+
+  .works__item {
+    width: 49%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .works__tag {
+    font-size: 10px;
+  }
+
+  .work__title-link {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1240px) {
+  .works__wrapper {
+    width: 100%;
+    padding: 100px 20px;
+  }
+
+  .works__item {
+    width: 32%;
+    margin-right: 0;
+  }
+
+  .works__tag {
+    font-size: 10px;
+  }
+
+  .work__title-link {
+    font-size: 18px;
+  }
 }

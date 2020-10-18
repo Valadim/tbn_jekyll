@@ -46,3 +46,36 @@
     background-position: center;
   }
 }
+@media (max-width: 500px){
+  .benefits__wrapper {
+    width: 100%;
+    padding: 50px 20px;
+  }
+
+  .benefits__list {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1024px){
+  .benefits__wrapper {
+    width: 100%;
+    padding: 70px 20px;
+  }
+
+  .benefits__column {
+    width: 49%;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1240px){
+  .benefits__wrapper {
+    width: 100%;
+    padding: 100px 20px;
+  }
+
+  .benefits__column {
+    width: 31%;
+  }
+}
+

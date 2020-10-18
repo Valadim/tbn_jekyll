@@ -29,3 +29,10 @@
     box-shadow: 0px 2px 5px 0 rgba($m-blue, .5);
   }
 }
+
+@media (max-width: 500px){
+  .btn__link {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+}

@@ -130,3 +130,183 @@
     border-bottom-color: $m-red;
   }
 }
+
+@media (max-width: 500px) {
+  .promo {
+    background-image: url(../../img/promo-bg.jpg);
+    background-position: top center;
+  }
+
+  .promo__wrapper {
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .promo__tag {
+    margin-top: 50px;
+    align-self: start;
+    padding: 1px 9px;
+    font-size: 12px;
+    background-color: $m-red;
+  }
+
+  .promo__title {
+    font-size: 36px;
+    line-height: 1.1;
+  }
+
+  .promo__services-list {
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .promo__services-item {
+    position: relative;
+    padding-top: 0;
+    padding-left: 70px;
+    margin-right: 0;
+    margin-bottom: 30px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      height: 50px;
+      width: 50px;
+    }
+
+    &--project::before {
+      background-position: 12px center;
+      background-size: 30px;
+    }
+
+    &--installation::before {
+      background-size: 30px;
+    }
+
+    &--dispatching::before {
+      background-size: 34px;
+    }
+
+    &--sale::before {
+      background-size: 32px;
+    }
+
+  }
+
+  .promo__services-title-link {
+    color: #ffffff;
+    font-size: 15px;
+  }
+
+  .promo__services-title {
+    margin: 0;
+  }
+
+  .promo__services-description {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+  }
+
+  .promo__services-link-more {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1024px){
+  .promo {
+    background-image: url(../../img/promo-bg.jpg);
+  }
+
+  .promo__wrapper {
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .promo__tag {
+    margin-top: 50px;
+    padding: 2px 10px;
+    font-size: 12px;
+  }
+
+  .promo__title {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 1.1;
+  }
+
+  .promo__services-list {
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+
+  .promo__services-item {
+    flex-basis: 45%;
+    padding-top: 70px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &::before {
+      height: 50px;
+      width: 50px;
+    }
+
+    &--project::before {
+      background-position: 12px center;
+      background-size: 30px;
+    }
+
+    &--installation::before {
+      background-image: url(../../img/icons/installation-icon.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 32px;
+    }
+
+    &--dispatching::before {
+      background-size: 36px;
+    }
+
+    &--sale::before {
+      background-size: 36px;
+    }
+
+  }
+
+  .promo__services-title-link {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .promo__services-title {
+    margin: 0;
+  }
+
+  .promo__services-description {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+  }
+
+  .promo__services-link-more {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+
+}
+
+@media (min-width: 1025px) and (max-width: 1240px){
+  .promo__wrapper {
+    width: 100%;
+    padding: 10px 20px;
+  }
+}

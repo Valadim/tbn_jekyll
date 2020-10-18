@@ -17,15 +17,15 @@
   @include list-reset;
 
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .certificates__item {
-  margin-right: 20px;
-  margin-bottom: 20px;
-  // box-shadow: 0 0 2px rgb(161, 161, 161);
-  transition: box-shadow ease .3s;
   width: 24%;
+  margin-bottom: 20px;
+  transition: box-shadow ease .3s;
+
 
   &:hover,
   &:focus {
@@ -38,3 +38,27 @@
 }
 
 
+@media (max-width: 500px){
+  .certificates__wrapper {
+    width: 100%;
+    padding: 50px 20px;
+  }
+
+  .certificates__item {
+    width: 49%;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1024px){
+  .certificates__wrapper {
+    width: 100%;
+    padding: 70px 20px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1240px){
+  .certificates__wrapper {
+    width: 100%;
+    padding: 100px 20px;
+  }
+}
