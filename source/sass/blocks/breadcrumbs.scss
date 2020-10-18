@@ -1,0 +1,20 @@
+.breadcrumbs {
+  font-size: 12px;
+}
+
+.breadcrumbs a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 12px;
+
+  transition: color ease .3s;
+
+  &:hover,
+  &:focus {
+    color: $m-red;
+  }
+}
+
+// .breadcrumbs__current-page:hover {
+//   color: rgb(112, 185, 245);
+// }
