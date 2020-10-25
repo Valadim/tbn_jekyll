@@ -59,6 +59,12 @@
     margin: 10px 0 10px 20px;
   }
 
+  .certificates__list,
+  .testimonials__list,
+  .partners__list {
+    margin: 0;
+  }
+
   li {
     position: relative;
     margin-bottom: 5px;
@@ -90,6 +96,16 @@
     &:focus {
       color: $m-red;
       border-bottom-color: $m-red;
+    }
+  }
+
+  .certificates__item,
+  .testimonials__item,
+  .partners__item {
+    padding-left: 0;
+
+    &::before {
+      display: none;
     }
   }
 }
@@ -163,8 +179,17 @@
         background-color: $m-red;
       }
     }
-  }
 
+    .certificates__item,
+    .testimonials__item,
+    .partners__item {
+      padding-left: 0;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1170px) {

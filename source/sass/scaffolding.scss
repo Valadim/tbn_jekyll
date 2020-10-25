@@ -77,6 +77,8 @@ img {
   display: none;
 }
 
+
+
 @media (max-width: 768px) {
   .d-hide {
     display: block;
@@ -84,5 +86,9 @@ img {
 
   .m-hide {
     display: none;
+  }
+
+  .scroll-table {
+    overflow-x: scroll;
   }
 }
