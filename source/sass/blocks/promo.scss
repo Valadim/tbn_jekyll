@@ -5,6 +5,18 @@
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  &--landing {
+    padding: 120px 0 250px;
+  }
+
+  &--verification {
+    background-image: url(../../img/poverka-schetchikov-vody-v-Almaty.jpg);
+  }
+
+  &--hm-service {
+    background-image: url(../../img/tehnicheskoe-obsluzhivanie-teploschetchikov.jpg);
+  }
 }
 
 .promo__wrapper {
@@ -28,6 +40,33 @@
   font-size: 58px;
   font-weight: 900;
   line-height: 68px;
+
+  &--landing {
+    max-width: 880px;
+    margin: 0 auto 30px;
+    font-size: 48px;
+    line-height: 1.3;
+    text-align: center;
+  }
+}
+
+.promo__landing-description {
+  max-width: 810px;
+  margin: 0 auto 20px;
+  font-size: 26px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.promo__landing-description--hm-service {
+  font-size: 20px;
+}
+
+.promo__landing-tip {
+  margin-bottom: 30px;
+  font-size: 18px;
+  text-align: center;
+  color: $font-l-o;
 }
 
 .promo__services-list {
@@ -137,6 +176,10 @@
     background-position: top center;
   }
 
+  .promo--landing {
+    padding: 30px 20px 50px;
+  }
+
   .promo__wrapper {
     width: 100%;
     padding: 10px 20px;
@@ -152,7 +195,21 @@
 
   .promo__title {
     font-size: 36px;
-    line-height: 1.1;
+    line-height: 1.3;
+  }
+
+  .promo__title--landing {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .promo__landing-description {
+    font-size: 16px;
+  }
+
+  .promo__landing-tip {
+    font-size: 15px;
+    margin-bottom: 10px;
   }
 
   .promo__services-list {
@@ -215,7 +272,7 @@
   }
 }
 
-@media (min-width: 501px) and (max-width: 1024px){
+@media (min-width: 501px) and (max-width: 1024px) {
   .promo {
     background-image: url(../../img/promo-bg.jpg);
   }
@@ -236,6 +293,10 @@
     font-size: 36px;
     font-weight: 900;
     line-height: 1.1;
+  }
+  .promo__title--landing {
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
 
   .promo__services-list {
@@ -300,11 +361,9 @@
   }
 }
 
-@media (min-width: 769px) and (max-width: 1024px){
+@media (min-width: 769px) and (max-width: 1024px) {}
 
-}
-
-@media (min-width: 1025px) and (max-width: 1240px){
+@media (min-width: 1025px) and (max-width: 1240px) {
   .promo__wrapper {
     width: 100%;
     padding: 10px 20px;

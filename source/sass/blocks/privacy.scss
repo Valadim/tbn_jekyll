@@ -1,0 +1,20 @@
+.privacy__notification {
+  font-size: 13px;
+  color: #ffffff8c;
+
+  & a {
+    color: rgb(112, 185, 245);
+    text-decoration: none;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(112, 185, 245);
+    transition: border-bottom-color ease .3s,
+      color ease .3s;
+
+    &:hover,
+    &:focus {
+      color: $m-red;
+      border-bottom-color: $m-red;
+    }
+  }
+}

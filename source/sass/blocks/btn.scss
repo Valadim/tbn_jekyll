@@ -6,6 +6,34 @@
   margin-top: 20px;
 }
 
+.btn--whatsapp {
+  display: inline-block;
+  padding: 12px 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #49c64b;
+  border-radius: 50px;
+  box-shadow: 0 3px 10px 0 #49c64b;
+  transition: background-color ease .3s, box-shadow ease .3s;
+
+  &:hover,
+  &:focus {
+    background-color: #40b242;
+    box-shadow: 0 0px 5px 0 #40b242;
+  }
+
+  &:active {
+    background-color: #399e3a;
+    box-shadow: 0 0px 2px 0 #399e3a;
+  }
+}
+
+.promo--landing .btn--whatsapp {
+  display: flex;
+  align-self: center;
+}
+
 .btn__link {
   padding: 10px 30px;
   color: $m-blue;
@@ -30,9 +58,43 @@
   }
 }
 
-@media (max-width: 500px){
+.btn--light {
+  display: inline-block;
+  padding: 12px 25px;
+  color: #ffffff;
+  text-decoration: none;
+  border: 2px solid #ffffff6e;
+  transition: border-color ease .3s;
+
+  &:hover,
+  &:focus {
+    border-color: #ffffff;
+  }
+
+  &:active {
+    border-color: #ffffff;
+  }
+}
+
+@media (max-width: 500px) {
   .btn__link {
     padding: 10px 20px;
     font-size: 12px;
+  }
+
+  .btn--light {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1024px){
+  .btn--light {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 10px 20px;
   }
 }

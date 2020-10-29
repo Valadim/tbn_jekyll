@@ -1,0 +1,104 @@
+.hm-service__wrapper {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 50px 10px;
+}
+
+.hm-service__title {
+  @include main-title;
+
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.hm-service__columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hm-service__column {
+  width: 48%;
+}
+
+.hm-service__solutions-title {
+  @include main-title;
+
+  margin-top: 10px;
+  padding-bottom: 20px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+
+  &::before {
+    height: 3px;
+  }
+}
+
+.hm-service__trouble-list,
+.hm-service__solution__list {
+  @include list-reset;
+
+  margin: 15px 0 40px 15px;
+}
+
+.hm-service__trouble-item,
+.hm-service__solution__item {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 20px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-image: url(../../img/icons/chec-green-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.hm-service__trouble-item::before {
+  background-image: url(../../img/icons/icon-cross-box-red.svg);
+}
+
+
+
+@media (max-width: 500px) {
+  .hm-service__wrapper {
+    width: 100%;
+    padding: 50px 20px;
+
+    &--wm-verification {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  .hm-service__wrapper {
+    width: 100%;
+    padding: 50px 20px;
+
+    &--wm-verification {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hm-service__wrapper {
+    width: 100%;
+    padding: 70px 20px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1240px) {
+  .hm-service__wrapper {
+    width: 100%;
+    padding: 100px 20px;
+  }
+}
