@@ -65,6 +65,17 @@
     background-image: url(../../img/icons/ho-pay-icon.svg);
     background-size: 42px;
   }
+
+  &--consultation::before {
+    background-image: url(../../img/icons/chat-icon.svg);
+    background-size: 42px;
+  }
+
+  &--agreement::before {
+    background-image: url(../../img/icons/document-icon.svg);
+    background-size: 38px;
+    background-position: 17px center;
+  }
 }
 
 .how-we-works__description a {
@@ -120,6 +131,11 @@
     &--pay::before {
       background-size: 27px;
     }
+
+    &--agreement::before {
+      background-size: 28px;
+      background-position: 13px center;
+    }
   }
 }
 
@@ -158,6 +174,11 @@
     &--pay::before {
       background-size: 27px;
     }
+
+    &--agreement::before {
+      background-size: 28px;
+      background-position: 13px center;
+    }
   }
 }
 
@@ -195,6 +216,11 @@
 
     &--pay::before {
       background-size: 27px;
+    }
+
+    &--agreement::before {
+      background-size: 28px;
+      background-position: 13px center;
     }
   }
 }

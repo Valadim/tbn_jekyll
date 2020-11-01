@@ -1,0 +1,49 @@
+.hm-service-list__wrapper {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 100px 10px;
+}
+
+.hm-service-list__title {
+  @include main-title;
+
+  max-width: 830px;
+}
+
+
+
+@media (max-width: 500px) {
+  .hm-service-list__wrapper {
+    width: 100%;
+    padding: 30px 20px 80px;
+  }
+
+  .hm-service-list__title {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  .hm-service-list__wrapper {
+    width: 100%;
+    padding: 30px 20px 80px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hm-service-list__wrapper {
+    width: 100%;
+    padding: 50px 20px 80px;
+  }
+
+  .hm-service-list__title {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1240px) {
+  .hm-service-list__wrapper {
+    width: 100%;
+    padding: 100px 20px;
+  }
+}

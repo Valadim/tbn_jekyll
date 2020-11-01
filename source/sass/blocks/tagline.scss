@@ -37,6 +37,16 @@
     width: 100%;
     padding: 0 20px;
   }
+
+  .tagline__title {
+    max-width: auto;
+    font-size: 16px;
+  }
+
+  .tagline__cta {
+    max-width: auto;
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 501px) and (max-width: 786px) {
@@ -48,6 +58,16 @@
     width: 100%;
     padding: 0 20px;
   }
+
+  .tagline__title {
+    max-width: auto;
+    font-size: 16px;
+  }
+
+  .tagline__cta {
+    max-width: auto;
+    font-size: 15px;
+  }
 }
 
 @media (min-width: 787px) and (max-width: 1024px) {
@@ -58,6 +78,16 @@
   .tagline__wrapper {
     width: 100%;
     padding: 0 20px;
+  }
+
+  .tagline__title {
+    max-width: auto;
+    font-size: 18px;
+  }
+
+  .tagline__cta {
+    max-width: auto;
+    font-size: 15px;
   }
 }
 
